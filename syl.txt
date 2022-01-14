@@ -1,0 +1,15 @@
+What is viewport, 
+different parts of URL (querystring)
+HTTP request response modal,
+HTTP Status Codes
+What is a server ? 
+HTML, CSS, JS,
+HTML elements, tag structure. Opening tag, attributes, closing tag, self closing
+Structure of HTML Document
+HTML tags head, title, body, div, span, form elements
+
+Create first HTML page
+CSS - html is skeleton, css is flesh
+CSS structure, ruleset
+selectors, declarations=>property: value;
+color, background-color, display, 
