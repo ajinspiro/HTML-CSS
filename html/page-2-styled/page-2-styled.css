@@ -1,0 +1,36 @@
+form {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: max-content;
+    font-weight: 500;
+    border: 2px solid rgb(37, 85, 69);
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+form>* {
+    margin-bottom: 15px;
+}
+
+form>button,
+input[type=submit] {
+    padding: 5px;
+    background-color: rgb(194, 93, 194);
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: Raleway;
+}
+
+.link-tag-example {
+    font-weight: 600;
+}
+
+li {
+    padding: 10px;
+}
+
+.css-rule-example{
+    width: 150px;
+}

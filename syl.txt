@@ -12,4 +12,4 @@ Create first HTML page
 CSS - html is skeleton, css is flesh
 CSS structure, ruleset
 selectors, declarations=>property: value;
-color, background-color, display, 
+common css properties : color, background-color, display,margin, padding etc
