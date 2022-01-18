@@ -16,13 +16,25 @@
     <link rel="stylesheet" href="page-2-styled.css" />
 
 
-    
+
     <style>
         body {
             height: 100vh;
             margin: 0;
             padding: 0;
             font-family: Raleway;
+        }
+
+
+        @media only screen and (max-width: 620px) {
+
+            form {
+                display: none;
+            }
+
+            .margin-top-on-mobile {
+                margin-top: 50px !important;
+            }
         }
     </style>
 </head>
@@ -61,7 +73,8 @@
         <button type="submit">Calculate tip</button>
     </form>
 
-    <div style="margin: auto;border:1px solid rgb(37, 85, 69);padding: 17px;margin: 0 20px">
+    <div class="margin-top-on-mobile"
+        style="border:1px solid rgb(37, 85, 69);padding: 17px;margin: 0 20px">
         We use CSS for telling the browser how
         HTML is rendered. <br>
         There are 3 ways to write CSS. <br />
@@ -98,6 +111,41 @@
         dot (e.g, .link-tag-example ) is used to select elements with class attribute. <br />
         hash (e.g, #calculate ) is used to select an HTML element with id attribute <br />
 
+    </div>
+    <div class="css-position-property">
+        <h1>CSS position property</h1>
+        The <code>position</code> property can be set the following values. <br>
+        By defaut all elements are static. <br />
+        An element who has position set to anything other than <br>
+        the default value "static" is called a positioned element.
+        We specify a different value when we need to move the element to a different position. <br />
+        <a href="https://www.w3schools.com/cssref/pr_class_position.asp">w3schools (css position)</a>
+        <ul>
+            <li>static (default)</li>
+            <li>relative</li>
+            <li>absolute</li>
+        </ul>
+        <span style="position: relative; left: 15px; background-color: rgba(153, 67, 67, 0.377);">
+            <code> position: relative </code> demo - This span has <code> position: relative </code>. and
+            <code> left: 25px </code>.
+            So it will be moved 25px left from the default position.
+            In other words, position relative lets us move elements relative to their own default position.
+        </span>
+        <span>And more text</span>
+
+        <br>
+
+        <div
+            style="padding: 10px; width: max-content; position: relative; top: 20px; left: 40px; border : 1px solid black;">
+            <b> This div has position set to relative.</b>
+            <div style="position: absolute; top: 20px; color: rgb(114, 114, 114);">
+                This div has position set to absolute. Absolute lets us move elements relative to its positioned parent,
+                in this case, the div with position relative.
+            </div>
+        </div>
+        <div style="position: absolute; top: 20px; left: -10px; color: rgb(131, 131, 131);">
+            Steve Jobs222
+        </div>
     </div>
 </body>
 

@@ -31,6 +31,13 @@ li {
     padding: 10px;
 }
 
-.css-rule-example{
+.css-rule-example {
     width: 150px;
+}
+
+.css-position-property {
+    margin: auto;
+    border: 1px solid rgb(37, 85, 69);
+    padding: 17px;
+    margin: 10px 20px; 
 }
