@@ -25,15 +25,22 @@
             font-family: Raleway;
         }
 
+        form {
+            display: none;
+        }
 
-        @media only screen and (max-width: 620px) {
+        .margin-top-on-mobile {
+            margin-top: 50px !important;
+        }
 
+        /* screen width is between 0 and 620px */
+        @media only screen and (min-width: 620px) {
             form {
-                display: none;
+                display: block;
             }
 
             .margin-top-on-mobile {
-                margin-top: 50px !important;
+                margin-top: 0px !important;
             }
         }
     </style>
@@ -73,8 +80,7 @@
         <button type="submit">Calculate tip</button>
     </form>
 
-    <div class="margin-top-on-mobile"
-        style="border:1px solid rgb(37, 85, 69);padding: 17px;margin: 0 20px">
+    <div class="margin-top-on-mobile" style="border:1px solid rgb(37, 85, 69);padding: 17px;margin: 0 20px">
         We use CSS for telling the browser how
         HTML is rendered. <br>
         There are 3 ways to write CSS. <br />
@@ -138,13 +144,21 @@
         <div
             style="padding: 10px; width: max-content; position: relative; top: 20px; left: 40px; border : 1px solid black;">
             <b> This div has position set to relative.</b>
-            <div style="position: absolute; top: 20px; color: rgb(114, 114, 114);">
+            <div style="position: absolute; top: 20px; left: 20px; color: rgb(114, 114, 114);">
                 This div has position set to absolute. Absolute lets us move elements relative to its positioned parent,
                 in this case, the div with position relative.
             </div>
         </div>
+
+
         <div style="position: absolute; top: 20px; left: -10px; color: rgb(131, 131, 131);">
-            Steve Jobs222
+            Absolutely positioned elements <br>
+            who doesnt have positioned parents <br>
+            will be positioned with reference to &lt;body&gt;
+        </div>
+
+        <div style="position: fixed; right: 0px; top: 0; color: rgb(131, 131, 131);">
+            Div with position: fixed will be positioned with reference to browser window.
         </div>
     </div>
 </body>
